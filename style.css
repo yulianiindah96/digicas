@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*border: 1px solid black;*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+/*CSS UNTUK JUMBOTRON*/
+/*Gunakan FLOAT*/
+header{
+    width: 100%;
+    background-color: #fcc603;
+}
+.container-header{
+    margin: 0 auto;
+    padding:30px;
+    margin-top: 50px;
+    overflow:auto;
+}
+.judul{
+    float:left;
+    width: 60%;
+}
+.judul img{
+    max-width: 65px;
+    margin-bottom: 30px;
+}
+.button-instagram{
+    padding: 6px;
+    width: 200px;
+    background-color: #fcc603;
+    border: 2px solid brown;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 1px 10px 2px white;
+}
+.button-instagram:hover{
+    padding: 6px;
+    border: 2px solid #fcc603;
+    background-color: brown ;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    
+}
+.judul h1{
+    font-family: 'Monoton', cursive;
+    
+    letter-spacing: 5px;
+    font-size: 45px;
+}
+.jargon{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    color:brown;
+}
+.judul p{
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+.penting{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.titik{
+    color: red;
+}
+.button-judul>a{
+    text-decoration: none;
+    color:white;
+}
+.button-judul{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0px 1px 10px 2px white;
+}
+
+.button-judul:hover{
+    padding: 15px;
+    box-shadow: none;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: brown;
+    opacity: 1;
+    color:white;
+    cursor: pointer;
+
+}
+.gambar-judul img{
+    max-width: 450px;
+    margin-top: 40px;
+    animation: scale-up-center 0.4s ease-out both;
+}
+.gambar-judul{
+    float:right;
+    width: 40%;
+    animation: scale-down-center 1s ease-out both;
+}
+@keyframes scale-down-center{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.clear{
+    clear:left;
+}
+
+/*CSS UNTUK NAVIGASI*/
+
+a{
+    text-decoration: none;
+    color:white;
+}
+nav li{
+    font-size: 15px;
+    transition: 0.15s ease-in-out all;
+    display: inline;
+}
+nav a{
+    color: white;
+    padding: 20px 25px;
+    opacity: 0.7;
+}
+nav{
+    background-color: brown;
+    padding: 5px;
+    box-shadow: 0px 1px 10px 1px black;
+    
+    width: 100%;
+
+    position: fixed;
+    top:0;   
+    z-index:10;
+    
+}
+nav a:hover{
+    font-weight: 200;
+    border-bottom: 2px solid white;
+    opacity: 1;
+}
+#promo p{
+    text-align: center;
+}
+#promo img{
+    width: 400px;
+
+}
+/*CONTENT PERTAMA(PRODUK)*/
+/*Gunakan Flexbox*/
+/*artikel 1*/
+.row-container img{
+    max-width: 300px;
+}
+.content{
+    padding-bottom: 60px;
+    padding-top: 40px;
+    overflow: auto;
+}
+.dialog p{
+    max-width: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.maemunah{
+    font-size: 1.5em;
+}
+.artikel_kuning{
+    background: #f7f7f7;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+.content h2{
+    text-align: center;
+}
+.content p{
+    width: 100%;
+    margin: 0 auto;
+}
+.containproduct{
+    padding-right:40px;
+    padding-left: 40px;
+}
+.containproduct em{
+    color: blue;
+}
+blockquote ::before,
+blockquote ::after{
+    content: ' " ';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.containerkisah{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: auto;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.row-container{
+    flex-grow: 1;
+}
+
+/*produk*/
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    margin: 0 auto;
+}
+.column{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    margin-right: 25px;
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+}
+.cardlike{
+    width: 250px;
+    background: #ffffff;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+.card .card-header{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius:8px;
+    border: top right radius 8px;
+}
+.kolom1.card .card-header{
+    background:url('img/best.jpg') no-repeat center center / cover;
+}
+.kolom2.card .card-header{
+    background:url('img/1.jpg') no-repeat center center / cover;
+}
+.kolom3.card .card-header{
+    background:url('img/4.jpg') no-repeat center center / cover;
+}
+.kolom4.card .card-header{
+    background:url('img/5.jpg') no-repeat center center / cover;
+}
+.kolom5.card .card-header{
+    background:url('img/3.jpg') no-repeat center center / cover;
+}
+.kolom6.card .card-header{
+    background:url('img/s5.jpg') no-repeat center center / cover;
+}
+
+.kolom10.card .card-header{
+    background:url('img/10.jpg') no-repeat center center / cover;
+}
+.kolom11.card .card-header{
+    background:url('img/11.jpg') no-repeat center center / cover;
+}
+.kolom12.card .card-header{
+    background:url('img/12.jpg') no-repeat center center / cover;
+}
+.card .card-body{
+    padding:20px;
+}
+.card .card-body h2{
+    margin-bottom:5px;
+}
+/*Untuk kotak pop up tipe case*/
+
+.modal,.modal1,.modal2,.modal3,.modal4,.modal5,.modal6{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    margin: auto;
+}
+.modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6{
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dashed #888;
+    width: 80%;
+}
+.tutup,.tutup1,.tutup2,.tutup3,.tutup4,.tutup5,.tutup6{
+    color:#aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.tutup:hover,
+.tutup:focus,
+.tutup1:hover,
+.tutup1:focus
+.tutup2:hover,
+.tutup2:focus
+.tutup3:hover,
+.tutup3:focus
+.tutup4:hover,
+.tutup4:focus
+.tutup5:hover,
+.tutup5:focus
+.tutup6:hover,
+.tutup6:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-konten{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+.modal-konten img{
+    width:350px;
+}
+#myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6{
+    text-decoration: underline;
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+#myBtn:hover,#myBtn1:hover,#myBtn2:hover,#myBtn3:hover,#myBtn4:hover,#myBtn5:hover,#myBtn6:hover{
+    text-decoration: none;
+    background-color: white;
+    border: 0;
+    cursor:pointer;
+    font-weight: lighter;
+    
+}
+
+
+footer{
+    background: brown;
+    overflow: auto;
+    padding: 60px 40px;
+}
+.footer-konten{
+    padding-bottom:60px;
+    border-bottom: 1px solid #000000;
+}
+.logo-gambar{
+    float: left;
+}
+.logo-gambar img{
+    width: 100px;
+}
+.text-logo{
+    float:right;
+    color: white;
+    line-height: 1.5;
+}
+.copyright{
+    color: white; 
+    text-align: center; 
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.order{
+    text-align: center;
+}
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}  
+.btn:hover {
+    opacity: 1;
+}
+.ordersekarang {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+}
+  
+.ordersekarang:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.thumbs{
+    font-size:36px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: blue;
+}
+#konten{
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    float : left;
+    width: 75%;
+}
+aside{
+    float: right;
+    width: 25%;
+}
+main{
+    padding: 20px;
+    overflow: auto;
+}
+.cardaside{
+    background: #fcc603;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    margin:30px 20px;
+    transition: 1s ease-in-out;
+    padding:20px;
+    text-align: center; 
+}
+.cardlogo-pembayaran{
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    margin: 20px 20px;
+    transition: 1s ease-in-out;
+    padding:20px;
+    text-align: center;
+
+}
+.cardlogo-pembayaran img{
+    width: 40px;
+}
+.cardlogo-pembayaran table{
+    margin: 0 auto;
+}
+.barcode img{
+    width:160px;
+}
+@media screen and (max-width:1025px){
+
+    .gambar-judul{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .judul{
+        width: 100%;
+    }
+    .gambar-judul img{
+        max-width: 450px;
+    }
+    .button-instagram{
+        padding: 2px;
+        margin-left: 0;
+    }
+    .button-instagram:hover{
+        padding: 2px;
+        margin-left: 0px;
+    }
+    .row-container img{
+        max-width: 200px;
+    }
+    .containproduct{
+        padding-right:10px;
+        padding-left: 10px;
+    }
+    .row{
+        display: block;
+        
+    }
+    .card{
+        width: 550px;
+        margin: 20px 10px;
+    }
+    .card .card-header{
+        height: 550px;
+    }
+    footer{
+        padding: 40px 30px;
+    }
+    .footer-konten{
+        padding-bottom:40px;
+    }
+    .logo-gambar img{
+        width: 80px;
+    }
+    .modal-konten img{
+        width:300px;
+    }
+    #konten,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:530px){
+    nav a{
+        padding: 15px 10px;
+    }
+    nav a:hover{
+        border-bottom: 2px solid white;
+    }
+    .gambar-judul{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .judul{
+        width: 100%;
+    }
+    .gambar-judul img{
+        max-width: 350px;
+    }
+    .row-container img{
+        max-width: 150px;
+    }
+    .dialog p{
+        font-size: 12px;
+        width: 100px;
+        font-weight: bold;
+    }
+    .row{
+        display: block;
+        
+    }
+    .card{
+        width: 350px;
+        margin: 20px 10px;
+    }
+    .card .card-header{
+        height: 350px;
+    }
+    footer{
+        padding: 30px 10px;
+    }
+    .footer-konten{
+        padding-bottom:150px;
+    }
+    .logo-gambar img{
+        width: 60px;
+    }
+    .modal-konten img{
+        width:250px;
+    }
+    #konten,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    #promo img{
+        width: 350px;
+    
+    }
+}
+
+@media screen and (max-width:375px){
+    nav a{
+        padding: 0 5px;
+    }
+    nav li{
+        font-size: 15px;
+    }
+    .gambar-judul{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .judul{
+        width: 100%;
+    }
+    .gambar-judul img{
+        max-width: 280px;
+    }
+    .dialog p{
+        font-size: 10px;
+        width: 80px;
+        font-weight: bold;
+    }
+    .row{
+        display: block;
+        
+    }
+    .card{
+        width: 300px;
+        margin: 20px 10px;
+    }
+    .card .card-header{
+        height: 300px;
+    }
+    #konten,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    #promo img{
+        width: 300px;
+    
+    }
+}
+@media screen and (max-width:320px){
+    nav a{
+        padding: 0 5px;
+    }
+    nav li{
+        font-size: 12px;
+    }
+    .gambar-judul{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .judul{
+        width: 100%;
+    }
+    .gambar-judul img{
+        max-width: 250px;
+    }
+    .dialog p{
+        font-size: 10px;
+        width: 80px;
+        font-weight: bold;
+    }
+    .row{
+        display: block;
+        
+    }
+    .card{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .card .card-header{
+        height: 250px;
+    }
+    footer{
+        padding: 20px 10px;
+    }
+    .footer-konten{
+        padding-bottom:120px;
+    }
+    .logo-gambar img{
+        width: 60px;
+    }
+    .text-logo, .copyright{
+        font-size: smaller;
+    }
+    .modal-konten img{
+        width:200px;
+    }
+    #konten,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
