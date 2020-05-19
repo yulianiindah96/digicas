@@ -9,7 +9,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey1)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey1,0);
+        localStorage.setItem(cacheKey1,157);
     }
 
     const button1 = document.querySelector(".fa1");
@@ -26,7 +26,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey2)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey2,0);
+        localStorage.setItem(cacheKey2,76);
     }
 
     const button2 = document.querySelector(".fa2");
@@ -43,7 +43,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey3)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey3,0);
+        localStorage.setItem(cacheKey3,97);
     }
 
     const button3 = document.querySelector(".fa3");
@@ -60,7 +60,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey4)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey4,0);
+        localStorage.setItem(cacheKey4,103);
     }
 
     const button4 = document.querySelector(".fa4");
@@ -76,7 +76,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey5)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey5,0);
+        localStorage.setItem(cacheKey5,74);
     }
 
     const button5 = document.querySelector(".fa5");
@@ -93,7 +93,7 @@ if(typeof(Storage)!=="undefined"){
     //pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
     if(localStorage.getItem(cacheKey6)==="undefined"){
         //jika belum maka akan atur dengan nilai awal yakni 0
-        localStorage.setItem(cacheKey6,0);
+        localStorage.setItem(cacheKey6,43);
     }
 
     const button6 = document.querySelector(".fa6");
